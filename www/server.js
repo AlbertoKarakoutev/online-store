@@ -203,6 +203,6 @@ var staticServe = function(req, res) {
 
 var httpServer = http.createServer(staticServe);
 
-httpServer.listen(port, '192.168.1.105', function(){
+httpServer.listen(port, function(){
 	console.log("Listening on " + port);
 });
