@@ -1,0 +1,1 @@
+﻿A: We will send you a folder inside of which you will find between 5 and 8 files with the same name but different extension. The difference between those files is the program that they have been sketched on. Different CNC machines are compatible with different CAD file, that’s why we want to be sure that one of those files will work in your case.

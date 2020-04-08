@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<head>
+	<title>K.P. Industries</title>
+	<script type = "text/javascript" src="/js/orderReceiver.js"></script>
+	<link rel="icon" href="../res/fav.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../css/cssmain.css">
+	<meta name="description" content="'K.P. Industries' прелага професионална изработка на детайли и дизайн на специфицирани 2D и 3D скици, поръчани от клиента. ">
+	<meta charset="UTF-8"> 
+</head>
+<body>
+<div class="main">
+<header class="header">
+
+
+	<figure>
+	<a href="en/index.html">
+	<img class="image1" alt="logo" src="../res/logo3.png" width="200" height="120">
+	</a>
+	</figure>
+	<nav class="navi">
+		<ul>
+		<div class="bar">
+			<li class="home"><a href="index.html">About</a></li>
+			<li class="order" style="background: radial-gradient( #89d38d, #29a029); box-shadow: 0px 0px 4px black inset;">Order</li>
+			<li class="products"><a href="products.html">Gallery</a></li>
+			<li class="contacts"><a href="contacts.html">Contacts</a></li>
+		</div>
+		</ul>
+	
+	</nav>
+</header>
+		<figure>
+					<a href="/bg/order.html"><img src="/res/flagb.jpg" class="fl" width="50" height="30">
+					</a>
+					</figure>
+	<figure><img src="/res/flage.png" class="fl" width="50" height="30" style="box-shadow: 0px 0px 4px white;">
+				
+					</figure>	
+<h1>You need it. We design it.</h1>.
+
+	<div class="maintextc">
+	
+		<div class="names">
+		<div class="help" id="nameh">?</div>
+		<div class="helpt" id="nameht">Please enter your name and surname, to ensure the correct packaging and delivery information when ordering your sketch.</div>
+  			Name:     <input type="text" class="te" id="name"><br>
+  			Surname:<input type="text" class="te" id="surname"><br>
+  		</div>
+  		<div class="desc"> 
+  		<div class="help" id="desch">?</div>
+  		<div class="helpt" id="descht">Please describe the full design of your sketch, including parametres and specific details. Your desired CAD file will contain these dimentions, so please be sure to double check!</div>
+  		Description:<br><textarea class="decst" rows="8" cols="40" id="desc"></textarea><br></div>
+  		<div class="pictures"></div>
+  		<div class="adress">
+  		<div class="help" id="contacth">?</div>
+  		<div class="helpt" id="contactht">Please fill in your information so we can reach you, as well as your adress so that, if required, we would be able to send workers to take measures of the detail you want designed.</div>
+  			Adress:<input id="addr">
+  			Mobile:<input id="phone"><br>
+  			E-mail:<input id="mail"><br>
+  		</div>
+  		<button class="send" onclick="sendOrder('name', 'surname', 'desc', 'addr', 'phone', 'mail');">SEND REQUEST</button>
+	
+
+</div>
+
+		<div class="maintexth2">
+		<p id="morep" style="font-family: myFont2; font-size: 20px"></p>
+	</div>
+	<script type = "text/javascript" src="../js/moreScript.js"></script>
+	<script>
+	disp();
+	</script>
+	<div class="more">MORE</div>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script >
+		let params = new URLSearchParams(location.search);
+		var cur = params.get('product');
+		document.getElementById('desc').value = cur;
+
+
+		$('.maintexth2').slideUp(0);
+		$('.more').click(function(){
+			$('.maintexth2').slideDown(1000);
+			$('.maintexth2').window.scrollTTo(0, 0);
+		});
+		$('.maintexth2').mouseleave(function(){
+			$('.maintexth2').slideUp(1000);
+		});
+		$('.helpt').slideUp(0);
+
+		$('#nameh').click(function(){
+			$('#nameht').slideDown(600);
+		});
+		$('#nameht').mouseout(function(){
+			$('#nameht').slideUp(300);
+		});
+
+		$('#desch').click(function(){
+			$('#descht').slideDown(600);
+		});
+		$('#descht').mouseout(function(){
+			$('#descht').slideUp(300);
+		});
+
+		$('#contacth').click(function(){
+			$('#contactht').slideDown(600);
+		});
+		$('#contactht').mouseout(function(){
+			$('#contactht').slideUp(300);
+		});
+
+	</script>
+<footer >
+		<a href="pinfo.html" class="links"><label class="foot">|Payment Information|</label><a>
+		<a href="faq.html" class="links"><label class="foot">|FAQ|</label><a>
+		<a href="devs.html" class="links"><label class="foot">|Development|	</label><a>
+		</footer>
+</div>
+</body>
+</html>

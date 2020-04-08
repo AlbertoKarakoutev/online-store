@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head id="eng" lang="en">
+	<title>K.P. Industries</title>
+	<link rel="icon" href="../res/fav.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../css/cssmain.css">
+
+	<meta name="description" content="'K.P. Industries' прелага професионална изработка на детайли и дизайн на специфицирани 2D и 3D скици, поръчани от клиента. ">
+	 <meta charset="UTF-8"> 
+</head>
+<body>
+<div class="main">
+<header class="header">
+	<figure>
+	<a href="/en/index.html">
+	<img class="image1" alt="logo" src="../res/logo3.png" width="200" height="120">
+	</a>
+	</figure>
+	
+	<nav class="navi">
+		<ul>
+		<div class="bar">
+			<li class="home"><a href="/en/index.html">About</a></li>
+			<li class="order"><a href="/en/order.html">Order</a></li>
+			<li class="products" style="background: radial-gradient( #89d38d, #29a029); box-shadow: 0px 0px 4px black inset;">Gallery</li>
+			<li class="contacts"><a href="/en/contacts.html">Contacts</a></li>
+		</div>
+		</ul>
+	
+	</nav>
+</header>
+
+	<figure>
+		<a id="flagBG" href="/bg/products.html">	<img src="/res/flagb.jpg" class="fl" width="50" height="30"></a>
+	</figure>
+
+	<figure>
+		<img src="/res/flage.png" class="fl" width="50" height="30" style="box-shadow: 0px 0px 4px white;">
+	</figure>	
+	
+	<h1>You need it. We design it.</h1>.	
+		<div class="maintextp" id="maintextp">
+			<table class="gallery">
+			<tr class="heads">
+				<th id="head1">RADIAL ENGINE</th>
+				<th id="head2">PISTON ROD</th>
+				<th id="head3">CYLINDER HEAD</th>
+
+			</tr>
+			<tr class="pics">
+				<th><img id="pic1" src="../res/0001.png" width="700" height="400"></th>
+
+				<th><a class="item" id="link" href="/en/item.html?item=2"><img id="pic2" src="../res/0002.png" width="700" height="400"></a></th>
+
+				<th><img id="pic3" src="../res/0003.png" width="700" height="400"></th>
+
+			</tr>
+			<tr class="descriptions">
+				<th id="desc1">Radial engines are known to humanity since 1901. They are famous with their great power to weight ratio and the positioning of the cylinders. These engines are still being used, mostly in aviation. The famous Tri-motor aircraft designed by “Ford Motor Company” had three radial engine which were made by “Pratt and Whitney”.</th>
+				
+				<th id="desc2">Internal combustion engines haven’t changed their principle of work since their invention in the 1800’s. IC engines produce mechanical energy by burning fuel under high pressure. In order to convert the linear motion of the piston to rotational motion of the crank shaft a piston rod is required. This specific piston rod is for a radial engine due to its shape and design.</th>
+
+				<th id="desc3">As we were talking about internal combustion engines, the cylinder head is mandatory so the engine can function properly. This part of the engine is critical because it needs to be strong due to the high pressure that is usually built up inside the cylinder. The higher pressure is wanted in order to get more power from the engine. The cylinder head on a 4-stroke engine needs valves which control the intake and exhaust gasses in and out of the cylinder. This makes the design of that part fairly sophisticated.</th>
+				
+			</tr>
+			</table>
+		</div>
+		
+		<button id="scrll">◄</button>
+		<button id="scrlr">►</button>
+
+	<div class="maintexth2">
+		<p id="morep" style="font-family: myFont2; font-size: 20px"></p>
+	</div>
+	<div class="more">MORE</div>
+	<script type="text/javascript" src="/js/galleryLoader.js"></script>
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script type = "text/javascript" src="../js/moreScript.js"></script>
+	<script>
+		disp();
+		$('.maintexth2').slideUp(0);
+		$('.more').click(function(){
+			$('.maintexth2').slideDown(1000);
+			$('.maintexth2').window.scrollTTo(0, 0);
+		});
+		$('.maintexth2').mouseleave(function(){
+			$('.maintexth2').slideUp(1000);
+		});
+	</script>
+	<script>
+	  var maint = $('.maintextp');
+	  var pos = 704;
+	 
+	  maint.animate({scrollLeft:pos}, 0);
+
+	   $('#scrll').click(function(){
+  	  		syncScrollLeft(afterL);
+  		});
+  	 
+  	  $('#scrlr').click(function(){ 
+  	  		syncScrollRight(afterR);
+  		});
+  	 
+	</script>
+<footer >
+		<a href="pinfo.html" class="links"><label class="foot">|Payment Information|</label><a>
+		<a href="faq.html" class="links"><label class="foot">|FAQ|</label><a>
+		<a href="devs.html" class="links"><label class="foot">|Development|	</label><a>
+		</footer>
+</div>
+</body>
+</html>
