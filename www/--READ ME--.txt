@@ -1,6 +1,6 @@
 --READ ME--
 
--Уебсайт "KP Industries" (official version )
+-Уебсайт "KP Industries" (official version 2.0.1)
 
 Съдържание на файла:
 
