@@ -28,4 +28,5 @@
 	- MongoDB база данни
 	- Мноого експериментиране с модули за Node чрез npm
 	- json конверсии за връщане на обекти ит базата данни
+	Dependancies: Node.js, npm mongodb, MongoDB Compass
 )

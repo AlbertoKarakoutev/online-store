@@ -47,7 +47,7 @@ function load(docnum, num) {
 					document.getElementById("descr").innerHTML = name;
 	  				document.getElementById("desc").innerHTML = descf;
 	  				try{
-	  					document.getElementById("price").innerHTML = "Цена: " + price + "лв.";
+	  					document.getElementById("price").innerHTML =document.getElementById("price").innerHTML + price + "lv.";
 	  				}catch{
 	  					//console.log("Element not present!");
 					}

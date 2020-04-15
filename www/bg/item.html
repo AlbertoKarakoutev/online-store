@@ -13,14 +13,14 @@
 <div class="main">
 <header class="header">
 
-	<figure><a href="/bg/index.html"><img class="image1" alt="logo" src="/res/logo3.png" width="200" height="120"></a></figure>
+	<figure><a href="/bg/index.html"><img class="image1" alt="logo" src="/res/logo3.png"  ></a></figure>
 	<nav class="navi">
 		<ul>
 		<div class="bar">
-			<li class="home"><a href="/bg/index.html">За Нас</a></li>
-			<li class="order"><a href="/bg/order.html">Поръчка</a></li>
-			<li class="products"><a href="/bg/products.html">Галерия</a></li>
-			<li class="contacts"><a href="/bg/contacts.html">Контакти</a></li>
+			<a href="/bg/index.html"><li class="home">За Нас</li></a>
+			<a href="/bg/order.html"><li class="order">Поръчка</li></a>
+			<a href="/bg/products.html"><li class="products">Галерия</li></a>
+			<a href="/bg/contacts.html"><li class="contacts">Контакти</li></a>
 		</div>
 		</ul>
 	</nav>
@@ -29,12 +29,12 @@
 <figure><img src="/res/flagb.jpg" class="fl" width="50" height="30" style="box-shadow: 0px 0px 4px white;"></figure>
 <figure><a href="/en/item.html" id="flag"><img src="/res/flage.png" class="fl" width="50" height="30"></a></figure>	
 
-<h1>You need it. We design it.</h1>.
+<h1 style = "color:#66fcf1;">You need it. We design it.</h1>
 
 <div class="maintexti">	
 	<img src="" class="imgbody" id="pic">
 	<b><div class="descr" id="descr"></div></b>
-	<b><div class="price" id="price"></div></b>
+	<b><div class="price" id="price">Цена: </div></b>
 		
 		<a class="link" id="order" href="/bg/order.html?item="><div class="orderitem"><b>ПОРЪЧАЙ</b></div></a>
 
@@ -50,7 +50,7 @@
 	<form class="revform" method="POST">
 		<label for="name">Име:</label><br>
 		<input type="text" id="name" name="revname"><br>
-		<label for="stars">Оценка:</label><br>
+		<label for="stars">Оценка (0-5):</label><br>
 		<input type="text" id="stars" name="revstars"><br>
 		<label for="revtext">Ревю:</label><br>
 		<input type="text" id="revtext" name="revtext"><br>

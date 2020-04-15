@@ -19,7 +19,7 @@ function loadReview(item) {
     				if(10*i<res.length){
     					console.log(res[7]);
     					document.getElementById('rev' + (i+1).toString()).innerHTML = "<b>(" + res[i*10 + 7] + "/5) " + res[i*10 + 5] + "<i> by " + res[i*10 + 3] + "</i></b>";
-    					document.getElementById('rev' + (i+1).toString()).style.border = "1px solid black";
+    					document.getElementById('rev' + (i+1).toString()).style.boxShadow = "0px 0px 7px #66fcf1";
     				}else{
     					break;
     				}

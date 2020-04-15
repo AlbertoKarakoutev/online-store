@@ -4,8 +4,8 @@
 <head>
 	<title>K.P. Industries</title>
 	<script type = "text/javascript" src="/js/orderReceiver.js"></script>
-	<link rel="icon" href="../res/fav.png" type="image/png">
-	<link rel="stylesheet" type="text/css" href="../css/cssmain.css">
+	<link rel="icon" href="/res/fav.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="/css/cssmain.css">
 	<meta name="description" content="'K.P. Industries' прелага професионална изработка на детайли и дизайн на специфицирани 2D и 3D скици, поръчани от клиента. ">
 	<meta charset="UTF-8"> 
 </head>
@@ -15,17 +15,17 @@
 
 
 	<figure>
-	<a href="en/index.html">
-	<img class="image1" alt="logo" src="../res/logo3.png" width="200" height="120">
+	<a href="/en/index.html">
+	<img class="image1" alt="logo" src="/res/logo3.png">
 	</a>
 	</figure>
 	<nav class="navi">
 		<ul>
 		<div class="bar">
-			<li class="home"><a href="index.html">About</a></li>
-			<li class="order" style="background: radial-gradient( #89d38d, #29a029); box-shadow: 0px 0px 4px black inset;">Order</li>
-			<li class="products"><a href="products.html">Gallery</a></li>
-			<li class="contacts"><a href="contacts.html">Contacts</a></li>
+			<a href="index.html"><li class="home">About</li></a>
+			<li class="order" style="background: radial-gradient( #67b3c2, #307572); box-shadow: 0px 0px 2px black inset;transform:none;transition:none;">Order</li>
+			<a href="products.html"><li class="products">Gallery</li></a>
+			<a href="contacts.html"><li class="contacts">Contacts</li></a>
 		</div>
 		</ul>
 	
@@ -38,7 +38,7 @@
 	<figure><img src="/res/flage.png" class="fl" width="50" height="30" style="box-shadow: 0px 0px 4px white;">
 				
 					</figure>	
-<h1>You need it. We design it.</h1>.
+<h1 style = "color:#66fcf1;">You need it. We design it.</h1>.
 
 	<div class="maintextc">
 	
@@ -56,9 +56,9 @@
   		<div class="adress">
   		<div class="help" id="contacth">?</div>
   		<div class="helpt" id="contactht">Please fill in your information so we can reach you, as well as your adress so that, if required, we would be able to send workers to take measures of the detail you want designed.</div>
-  			Adress:<input id="addr">
-  			Mobile:<input id="phone"><br>
-  			E-mail:<input id="mail"><br>
+  			Adress:<input id="addr" class="te">
+  			Mobile:<input id="phone" class="te"><br>
+  			E-mail:<input id="mail" class="te"><br>
   		</div>
   		<button class="send" onclick="sendOrder('name', 'surname', 'desc', 'addr', 'phone', 'mail');">SEND REQUEST</button>
 	
@@ -68,12 +68,12 @@
 		<div class="maintexth2">
 		<p id="morep" style="font-family: myFont2; font-size: 20px"></p>
 	</div>
-	<script type = "text/javascript" src="../js/moreScript.js"></script>
+	<script type = "text/javascript" src="/js/moreScript.js"></script>
 	<script>
 	disp();
 	</script>
 	<div class="more">MORE</div>
-	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="/js/jquery-3.1.1.js"></script>
 	<script >
 		let params = new URLSearchParams(location.search);
 		var cur = params.get('product');

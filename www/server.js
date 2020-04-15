@@ -185,7 +185,7 @@ var staticServe = function(req, res) {
 
 	var trueUrl = fileLoc.split('?')[0];
     fs.readFile(trueUrl, function(err, data) {
-        if(!req.url.includes("json")&&!req.url.includes("reviews")&& !req.url.includes("revForm")){
+        if(!req.url.includes("json") && !req.url.includes("reviews")&& !req.url.includes("revForm")){
         	if (err) {
             	res.writeHead(404, 'Not Found');
             	res.write('404: File Not Found!');
